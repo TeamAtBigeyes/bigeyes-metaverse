@@ -664,8 +664,8 @@ export const voxel_block_builder = (() => {
       if (hack_defs.useFlatTerrain) {
         this.terrainGenerator_ = new TerrainGeneratorFlat(params);
       } else {
-        this.terrainGenerator_ = new TerrainGeneratorWorld(params);
-        // this.terrainGenerator_ = new TerrainGeneratorBasicPerlin(params);
+        // this.terrainGenerator_ = new TerrainGeneratorWorld(params);
+        this.terrainGenerator_ = new TerrainGeneratorBasicPerlin(params);
         // this.terrainGenerator_ = new TerrainGeneratorMoon(params);
       }
     }
